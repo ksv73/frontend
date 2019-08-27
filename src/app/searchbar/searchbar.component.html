@@ -1,0 +1,24 @@
+<!--searc box-->
+<form class="form-inline my-2 my-lg-0" [formGroup] = "searchForm" (ngSubmit) = "search()">
+  <input class="form-control mr-sm-2" type="search" placeholder="Search by title/author" value="" formControlName="searchbox" >
+  <button class="btn btn-outline-success my-2 my-sm-0" value="search">Search</button>
+   <!-- <input id="searchbox" name="searchbox"> -->
+</form>
+<br>
+
+
+<!--search results section-->
+<section id="search">
+  <h2>Search Results</h2>
+  <div class="col-2">
+      <div class="card col-2" *ngFor="let item of res">
+          <div class="details">
+              <p>BOOK: {{ item["title"] }}</p>
+              <hr>
+              <p>AUTHOR: {{ item["author_name"] }}</p>
+              <button>Recommend</button>
+          </div>
+      </div>
+  </div>
+</section>
+

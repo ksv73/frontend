@@ -1,0 +1,70 @@
+<div class="split left" >
+    <div class="centered">
+        <img src="/assets/images/Book-Transparent-PNG.png" width="45px" height="45px" class="logo">
+        <br>
+            <h1>BookApp</h1>
+       
+        
+    </div>
+  </div>
+
+
+  <div class="split right " style="background-color: rgb(161, 201, 121)">
+	<!-- <link rel="icon" type="image/png" href="/book-app-icon.jpg"/>
+
+  
+<div class="login-container">
+   <mat-card>
+       <div class="login-wrapper">
+           <mat-form-field>
+               <input matInput class="username" name="username" class="form-control" [(ngModel)]="user.userName" placeholder="Enter your User Name" required>
+           </mat-form-field>
+           <mat-form-field>
+               <input matInput class="password" name="password" class="form-control" [(ngModel)]="user.userPassword" placeholder="Enter your password" required>
+           </mat-form-field>
+           <button class="button" >Submit</button>
+           <button class="button button2"> <a  mat-button  routerLink="/signup">Register</a></button>
+          
+           <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+              </div>
+           
+       </div>
+   </mat-card>
+</div> -->
+<div class="split right " style="background-color: rgb(161, 201, 121)">
+    <div class="centered">
+      
+            <mat-card class="example-card">
+
+                    <mat-card-header>
+                        <mat-card-title>LOGIN</mat-card-title>
+                    </mat-card-header>
+                
+                    <form class="example-form">
+
+                        <mat-form-field class="example-full-width">
+                            <!-- <input matInput placeholder="USER NAME" type="text" required> -->
+                            <input matInput class="username" name="username" class="form-control" [(ngModel)]="user.userName" placeholder="Enter your User Name" required>
+                        </mat-form-field>
+                <br>
+                        <mat-form-field class="example-full-width">
+                            <!-- <input matInput placeholder="PASSWORD" type="password" required> -->
+                            <input matInput class="password" name="password" class="form-control" [(ngModel)]="user.userPassword" placeholder="Enter your password" required>
+
+                        </mat-form-field>
+<br>
+                        <button mat-flat-button color="primary"   (click)="userlogin()">LOGIN</button>
+
+                
+                    </form>
+                    <br>
+                
+                    <p>Don't have an account?<a class="nav-link" routerLink="/signup" routerLinkActive="active">Sign Up</a> </p>
+
+                
+                </mat-card>
+      
+      
+    </div>
+  </div>

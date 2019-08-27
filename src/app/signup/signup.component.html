@@ -1,0 +1,35 @@
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<mat-card class="my-card">
+<mat-card-content>
+    <form class="my-form">
+      
+           <br>
+           
+           <mat-form-field class="full-width">
+            <mat-label>UserId</mat-label>
+            <input matInput type="emailId"  placeholder="Email" name="email" class="form-control" [(ngModel)]="user.userName" id="email">
+         </mat-form-field>
+         <br>
+         <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input  matInput  type="password" name="password" class="form-control"[(ngModel)]="user.userPassword"  id="password">
+         </mat-form-field>
+           
+           <mat-form-field class="full-width">
+            <mat-label>Confirm Password</mat-label>
+            <input  matInput  placeholder="Password"  name="Confirmpassword">
+         </mat-form-field>
+
+<br>
+<button class="btn btn-success" (click)="createUser()">Create</button>
+
+
+
+    </form>
+  </mat-card-content>
+</mat-card>

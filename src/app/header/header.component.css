@@ -1,0 +1,42 @@
+body{
+    height: 50%;
+}
+.mat-toolbar {
+    background:rgb(203, 221, 120);
+    height: 10%;
+    color: rgba(0,0,0,.87);
+    font-family: 'Courier New', Courier, monospace
+
+}
+.example-header-image {
+   
+    background-image:url('https://icon-library.net/images/book-app-icon/book-app-icon-8.jpg');
+    background-size: 100%;
+  }
+
+  .register-container{
+      padding: 70px 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+  } 
+  form.example {
+    float: left;
+    width: 20%;
+    padding: 10px;
+   
+    color: white;
+    font-size: 17px;
+ 
+    cursor: pointer;
+   }
+   form.example button:hover {
+    background: #0b7dda;
+   }
+   .mat-button{
+     font-family: Arial
+   }

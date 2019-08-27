@@ -1,0 +1,19 @@
+.mat-card-content>:last-child:not(.mat-card-footer), .mat-card>:last-child:not(.mat-card-footer) {
+    margin-bottom: 3%;
+    margin-left: 25%;
+    margin-right: 25%
+
+}
+.mat-card {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    background-color: bisque
+}
+.mat-card {
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    display: block;
+    position: relative;
+    padding: 40px;
+    border-radius: 4px;
+    width: 43%;
+    height: 60%;
+}

@@ -1,0 +1,57 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<mat-toolbar><div mat-card-avatar class="example-header-image"></div><b>BookApp</b> 
+    <button mat-button routerLink="/Dashboard" >Dashboard</button>
+    <button mat-button [matMenuTriggerFor]="aboveMenu">Favourites</button>
+    <mat-menu #aboveMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+    <button mat-button  >Author</button>
+    <mat-menu #belowMenu="matMenu" >
+      
+    </mat-menu>
+    
+    <button mat-button  routerLink="/recommend" >Recommendations</button>
+    <button mat-button  routerLink="/searchbar" >search</button>
+    <!-- <a *ngIf="!currentUser || currentUser.role == Role.Customer"
+    class="nav-item nav-link " routerLink="/recommend">
+Cart
+</a> -->
+
+    <mat-menu  >
+     
+    </mat-menu>
+  
+    <input type="hidden" name="search_param" value="all" id="search_param">
+    
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit"><i class="fa fa-search"></i></button>
+       </form>
+    
+   
+                  
+           <span class="container-search">
+               
+                   <mat-toolbar color="primary" >
+                    <mat-toolbar-row>
+                      <!--  <span>HOME</span> -->
+                       <span><a href="/">HOME</a></span>
+                       <span class="spacer"></span>
+                      <div align="right"> 
+                            <a  mat-button  routerLink="/updateprofile">updateprofile</a>    
+                    <a  mat-button  routerLink="/login">Login</a>
+                </div>
+                               
+
+                    </mat-toolbar-row>
+                 </mat-toolbar>
+         
+                </span>
+    </mat-toolbar>
+   
+
+
