@@ -37,6 +37,7 @@ import { UpdateprofileComponent } from './updateprofile/updateprofile.component'
 import { AuthenticationService } from './authentication.service';
 import { AuthGuard } from './guards/auth.guard';
 import { RouterService } from './router.service';
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -70,7 +71,9 @@ const routes: Routes = [
     
     SearchbarComponent,
     
-    UpdateprofileComponent
+    UpdateprofileComponent,
+    
+    EditComponent
     
   ],
   imports: [

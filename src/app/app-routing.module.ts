@@ -7,6 +7,7 @@ import { RecommendComponent } from './recommend/recommend.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 import { AuthGuard } from './guards/auth.guard';
+import { EditComponent } from './edit/edit.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
     { path: 'Dashboard', component: DashboardComponent,canActivate: [AuthGuard] },
     { path: 'recommend', component: RecommendComponent,canActivate: [AuthGuard] },
     { path: 'searchbar', component: SearchbarComponent,canActivate: [AuthGuard] },
+    { path:'edit',component:EditComponent},
     { path: 'updateprofile', component:UpdateprofileComponent,canActivate: [AuthGuard] }
     /*{ path: 'add-user', component: }*/
    

@@ -22,6 +22,19 @@ export class SignUpComponent implements OnInit {
           alert("User created successfully.");
         });
   };
+
+  // get profile_image() {
+  //   return this.u.get('profile_image');
+  // }
+  // base64textString = [];
+  // onChange(event) {
+  //   const file = event.target.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onload = this.handleReaderLoaded.bind(this);
+  //     reader.readAsBinaryString(file);
+  //     console.log(this.base64textString);
+  //   }
   
  }
 

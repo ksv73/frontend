@@ -4,6 +4,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 background-image: url();
 opacity: 20%;
+background: linear-gradient(90deg, rgba(142,144,35,1) 0%, rgba(123,171,70,1) 11%, rgba(0,212,255,1) 100%);
+
 }
 
 

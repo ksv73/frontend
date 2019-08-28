@@ -15,16 +15,16 @@ export class RecommendComponent implements OnInit {
 
   constructor(private httpClient:HttpClient,private unrecommendService:UnrecommendService) {
    }
-  
-   ngOnInit() {
-    this.httpClient.get('http://localhost:8089/apiRecommend/displayRecommend').subscribe(data=>{
+  id= localStorage.getItem('id');
 
+   ngOnInit() {
+    // this.reloadData();
+
+    this.httpClient.get('http://localhost:8089/apiRecommend/displayRecommend'+'/'+this.id).subscribe(data=>{
       // this.country=data as object[];
       this.result = data;
      console.log(this.result);
-  
-    
-    })
+     })
   }
 
     unrecommend(id){

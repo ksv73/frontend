@@ -1,4 +1,4 @@
-
+<!-- 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <mat-toolbar><div mat-card-avatar class="example-header-image"></div><b>BookApp</b> 
@@ -16,12 +16,12 @@
     
     <button mat-button  routerLink="/recommend" >Recommendations</button>
     <button mat-button  routerLink="/searchbar" >search</button>
-    <!-- <a *ngIf="!currentUser || currentUser.role == Role.Customer"
+    <a *ngIf="!currentUser || currentUser.role == Role.Customer"
     class="nav-item nav-link " routerLink="/recommend">
 Cart
 </a> -->
 
-    <mat-menu  >
+<!-- <mat-menu  >
      
     </mat-menu>
   
@@ -38,8 +38,8 @@ Cart
                
                    <mat-toolbar color="primary" >
                     <mat-toolbar-row>
-                      <!--  <span>HOME</span> -->
-                       <span><a href="/">HOME</a></span>
+                        <span>HOME</span> -->
+<!-- <span><a href="/">HOME</a></span>
                        <span class="spacer"></span>
                       <div align="right"> 
                             <a  mat-button  routerLink="/updateprofile">updateprofile</a>    
@@ -52,6 +52,51 @@ Cart
          
                 </span>
     </mat-toolbar>
-   
+    -->
 
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <img src="/assets/images/Book-Transparent-PNG.png" width="20px" height="20px" class="logo"> -->
+    <img src="/assets/images/Book-PNG-Clipart.png" width="30px" height="30px" class="logo">
+<a class="navbar-brand" href="#">BookApp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <br>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown">Profile
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/edit" routerLinkActive="active">Edit</a>
+                    </li>
+                    <li><a class="nav-link" routerLink="/updateprofile" routerLinkActive="active">Update Password</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                     <a class="nav-link" routerLink="/Dashboard" routerLinkActive="active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/recommend" routerLinkActive="active">My Recommendation</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="user-action d-flex justify-content-end">
+
+
+        <button mat-button routerLink="/searchbar">search</button>
+
+     <br>
+     <!-- <span><a href="/">HOME</a></span> -->
+<br>
+
+        <a class="user-action-link" routerLink="/login" routerLinkActive="active" (click)=logOut()>Logout</a>
+    </div>
+
+</nav>

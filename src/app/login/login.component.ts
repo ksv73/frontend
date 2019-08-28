@@ -16,7 +16,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(private service:UserService,private authService: AuthenticationService,
-    private routerService:RouterService) { }
+    private routerService:RouterService,private router:Router) { }
  
   user: User = new User();
   ngOnInit() {
@@ -50,8 +50,8 @@ localStorage.setItem('id',this.user.userName);
           console.log(data);
           this.authService.setBearerToken(this.bearerToken);
           console.log(this.bearerToken);
-         this.routerService.routeToDashboard();
-          //this.router.navigate(['/Dashboard']);
+         //this.routerService.routeToDashboard();
+          this.router.navigate(['/Dashboard']);
          // console.log(" to dashboard");
         },
         err => {

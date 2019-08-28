@@ -9,9 +9,11 @@
              </mat-card-header>
               <mat-card-content>
                      Book: {{recommend.url}}
-                     {{recommend.id}}
+                     <br>
+                     {{recommend.username}}
 
               </mat-card-content>
+              
               <button id="button" mat-raised-button color="primary" style= "color:white" routerLink="/recommend" (click)="unrecommend(recommend.id)"style="setColor('button', '#101010')">unRecommend</button> 
               <!-- <meta http-equiv="refresh"   content="1;url=http://localhost:4200/recommend" routerLink="/recommend"/> -->
              <!-- <input type="submit"id="button" value = "button" style= "color:white" (click)="recommend(card)"/>Recommend -->
@@ -19,3 +21,6 @@
             </mat-card>
           </mat-grid-tile>
         </mat-grid-list>  
+
+
+  

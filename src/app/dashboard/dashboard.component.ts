@@ -35,6 +35,8 @@ export class DashboardComponent implements OnInit {
   recommend(data){
     this.books.name = data["name"];
     this.books.url = data["url"];
+    this.books.username= localStorage.getItem('id');
+
     console.log(this.books);
     this.recommendService.recommend(this.books).subscribe(data => {
       alert("recommendation added successfully");
